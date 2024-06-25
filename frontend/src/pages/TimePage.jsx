@@ -29,22 +29,26 @@ const TimePage = () => {
   return (
     <div className="container mx-auto mt-10">
       <div className="max-w-4xl mx-auto bg-gray-100 rounded-xl overflow-hidden shadow-md">
+        {/* Exibição da imagem do time */}
         <img src={time.image} alt={`${time.nome_time} Logo`} className="w-full h-80 object-cover object-center" />
         <div className="p-6">
+          {/* Exibição do nome do time */}
           <h2 className="text-3xl font-bold text-gray-800">{time.nome_time}</h2>
-          {/* <p className="text-lg text-gray-600 mt-4">
-            <span className="font-semibold">Cidade:</span> {time.city}
+          {/* Outras informações do time */}
+          <p className="text-lg text-gray-600 mt-4">
+            <span className="font-semibold">Cidade:</span> {time.cidade}
           </p>
           <p className="text-lg text-gray-600">
-            <span className="font-semibold">Conferência:</span> {time.conference}
+            <span className="font-semibold">Conferência:</span> {time.conferencia}
           </p>
           <p className="text-lg text-gray-600">
-            <span className="font-semibold">Divisão:</span> {time.division}
+            <span className="font-semibold">Divisão:</span> {time.divisao}
           </p>
           <p className="text-lg text-gray-600">
-            <span className="font-semibold">Campeonatos:</span> {time.championships}
+            <span className="font-semibold">Número de Títulos:</span> {time.numero_titulos}
           </p>
-          <p className="text-lg text-gray-600">
+          {/* Opções adicionais */}
+          {/* <p className="text-lg text-gray-600">
             <span className="font-semibold">Arena:</span> {time.arena}
           </p>
           <p className="text-lg text-gray-600">

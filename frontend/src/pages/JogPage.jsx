@@ -28,21 +28,12 @@ const JogPage = () => {
 
     return (
         <div className="bg-gray-500 m-20 md:m-10 max-w-full rounded-xl p-4">
-            {/* <h2 className="text-white text-3xl font-bold mb-4">{jogador.first_name} {jogador.last_name}</h2> */}
-            {/* <div className="flex justify-center items-center">
-                <img src={jogador.image} alt={`${jogador.first_name} ${jogador.last_name}`} className="w-72 h-72 object-cover rounded-full shadow-lg" />
-            </div> */}
+            <h2 className="text-white text-3xl font-bold mb-4">{jogador.nome}</h2>
             <div className="mt-4 text-white">
-                <p><strong>Posição:</strong> {jogador.nome}</p>
-                {/* <p><strong>Altura:</strong> {jogador.height} ft</p>
-                <p><strong>Peso:</strong> {jogador.weight} lbs</p>
-                <p><strong>Número:</strong> {jogador.jersey_number}</p>
-                <p><strong>Universidade:</strong> {jogador.college}</p>
-                <p><strong>País:</strong> {jogador.country}</p>
-                <p><strong>Ano do Draft:</strong> {jogador.draft_year}</p>
-                <p><strong>Round do Draft:</strong> {jogador.draft_round}</p>
-                <p><strong>Pick do Draft:</strong> {jogador.draft_number}</p>
-                <p><strong>Time:</strong> {jogador.team.name}</p> */}
+                <p><strong>Data de Nascimento:</strong> {new Date(jogador.data_nascimento).toLocaleDateString()}</p>
+                <p><strong>Cidade de Nascimento:</strong> {jogador.cidade_nascimento}</p>
+                <p><strong>Universidade:</strong> {jogador.universidade}</p>
+                <p><strong>Resumo:</strong> {jogador.resumo}</p>
             </div>
         </div>
     );
